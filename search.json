@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "garden.caruthe.rs",
+    "section": "",
+    "text": "COMING SOON"
+  },
+  {
     "objectID": "garden.html",
     "href": "garden.html",
     "title": "Our native garden",
@@ -12,12 +19,5 @@
     "title": "Our native garden",
     "section": "About us",
     "text": "About us\nWe’re David and Kelly! We moved to the neighborhood in 2024.\n\nResources\n\nWild Ones\nNational Wildlife Federation"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "garden.caruthe.rs",
-    "section": "",
-    "text": "COMING SOON"
   }
 ]
