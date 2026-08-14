@@ -3,6 +3,11 @@ project:
 
 website:
   title: "garden.caruthe.rs"
+  navbar:
+    left:
+    - href: index.qmd
+    - href: plants.qmd
+    - href: resources.qmd
 
 format:
   html:
