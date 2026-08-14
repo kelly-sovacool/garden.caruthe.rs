@@ -78,20 +78,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-plants .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-common','listing-scientific','listing-category','listing-source',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-scientific','listing-category',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-common","listing-scientific","listing-category","listing-source"],
+      searchColumns: ["listing-title","listing-scientific","listing-category","listing-source"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-plants'] = new List('listing-plants', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -206,18 +206,14 @@ window.Quarto = {
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div id="listing-plants" class="quarto-listing quarto-listing-container-table">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+    <select id="listing-plants-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-plants'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-common" data-direction="asc">
+      <option value="listing-title-sort" data-direction="asc">
         Common name
       </option>
       <option value="listing-scientific" data-direction="asc">
@@ -225,9 +221,6 @@ window.Quarto = {
       </option>
       <option value="listing-category" data-direction="asc">
         Category
-      </option>
-      <option value="listing-source" data-direction="asc">
-        Source
       </option>
     </select>
   </div>
@@ -241,7 +234,7 @@ window.Quarto = {
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-common" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Common name</a>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Common name</a>
 </th>
 
 <th>
@@ -252,193 +245,13 @@ window.Quarto = {
 <a class="sort" data-sort="listing-category" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Category</a>
 </th>
 
-<th>
-<a class="sort" data-sort="listing-source" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Source</a>
-</th>
-
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0">
+<tr data-index="0" data-listing-title-sort="anise hyssop">
 <td>
-<span class="listing-common">wild strawberry</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Fragaria virginiana</em></span>
-</td>
-<td>
-<span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">our friend Sarah</span>
-</td>
-
-</tr>
-
-<tr data-index="1">
-<td>
-<span class="listing-common">sand (lanceleaf) coreopsis</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Coreopsis lanceolata</em></span>
-</td>
-<td>
-<span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">Wild Ones Wayne County</span>
-</td>
-
-</tr>
-
-<tr data-index="2">
-<td>
-<span class="listing-common">purple lovegrass</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Eragrostis pectinacea</em></span>
-</td>
-<td>
-<span class="listing-category">grass</span>
-</td>
-<td>
-<span class="listing-source">Wild Ones Wayne County</span>
-</td>
-
-</tr>
-
-<tr data-index="3">
-<td>
-<span class="listing-common">hairy beardtongue</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Penstemon hirsutus</em></span>
-</td>
-<td>
-<span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">Wild Ones Wayne County</span>
-</td>
-
-</tr>
-
-<tr data-index="4">
-<td>
-<span class="listing-common">prairie dropseed</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Sporobolus heterolepis</em></span>
-</td>
-<td>
-<span class="listing-category">grass</span>
-</td>
-<td>
-<span class="listing-source">Wild Ones Wayne County</span>
-</td>
-
-</tr>
-
-<tr data-index="5">
-<td>
-<span class="listing-common">pearly everlasting</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Anaphalis margaritaiea</em></span>
-</td>
-<td>
-<span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">Wild Ones Wayne County</span>
-</td>
-
-</tr>
-
-<tr data-index="6">
-<td>
-<span class="listing-common">spotted bee balm (horsemint)</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Monarda punctata</em></span>
-</td>
-<td>
-<span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">Wild Ones Wayne County</span>
-</td>
-
-</tr>
-
-<tr data-index="7">
-<td>
-<span class="listing-common">butterfly weed</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Asclepias tuberosa</em></span>
-</td>
-<td>
-<span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">Wild Ones Wayne County</span>
-</td>
-
-</tr>
-
-<tr data-index="8">
-<td>
-<span class="listing-common">black-eyed susan</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Rudbeckia hirta</em></span>
-</td>
-<td>
-<span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">Wild Ones Wayne County</span>
-</td>
-
-</tr>
-
-<tr data-index="9">
-<td>
-<span class="listing-common">sky blue aster</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Symphotrichum oolentangiense</em></span>
-</td>
-<td>
-<span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">Wild Ones Wayne County</span>
-</td>
-
-</tr>
-
-<tr data-index="10">
-<td>
-<span class="listing-common">side oats grama</span>
-</td>
-<td>
-<span class="listing-scientific"><em>Bouteloua curtipendula</em></span>
-</td>
-<td>
-<span class="listing-category">grass</span>
-</td>
-<td>
-<span class="listing-source">Wild Ones Wayne County</span>
-</td>
-
-</tr>
-
-<tr data-index="11">
-<td>
-<span class="listing-common">anise hyssop</span>
+<a href="https://michiganflora.net/record/1532" class="title listing-title">anise hyssop</a>
 </td>
 <td>
 <span class="listing-scientific"><em>Agastache foeniculum</em></span>
@@ -446,15 +259,77 @@ window.Quarto = {
 <td>
 <span class="listing-category">forb</span>
 </td>
+
+</tr>
+
+<tr data-index="1" data-listing-title-sort="pearly everlasting">
 <td>
-<span class="listing-source">Wild Ones Wayne County</span>
+<a href="https://xerces.org/blog/plants-for-pollinators-pearly-everlasting" class="title listing-title">pearly everlasting</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Anaphalis margaritacea</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
 </td>
 
 </tr>
 
-<tr data-index="12">
+<tr data-index="2" data-listing-title-sort="pussytoes">
 <td>
-<span class="listing-common">purple coneflower</span>
+<a href="https://michiganflora.net/genus/Antennaria" class="title listing-title">pussytoes</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Antennaria</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-title-sort="butterfly weed">
+<td>
+<a href="https://www.canr.msu.edu/nativeplants/plant_facts/butterfly_weed" class="title listing-title">butterfly weed</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Asclepias tuberosa</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-title-sort="side-oats grama">
+<td>
+<a href="https://michiganflora.net/record/2022" class="title listing-title">side-oats grama</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Bouteloua curtipendula</em></span>
+</td>
+<td>
+<span class="listing-category">grass</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-title-sort="sand coreopsis">
+<td>
+<a href="https://www.canr.msu.edu/nativeplants/plant_facts/sand_coreopsis" class="title listing-title">sand coreopsis</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Coreopsis lanceolata</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-title-sort="purple coneflower">
+<td>
+<a href="https://michiganflora.net/record/310" class="title listing-title">purple coneflower</a>
 </td>
 <td>
 <span class="listing-scientific"><em>Echinacea purpurea</em></span>
@@ -462,31 +337,77 @@ window.Quarto = {
 <td>
 <span class="listing-category">forb</span>
 </td>
+
+</tr>
+
+<tr data-index="7" data-listing-title-sort="purple love grass">
 <td>
-<span class="listing-source">our neighor Bob (thanks Bob!)</span>
+<a href="https://www.michiganensenatives.com/product/purple-love-grass/246" class="title listing-title">purple love grass</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Eragrostis pectinacea</em></span>
+</td>
+<td>
+<span class="listing-category">grass</span>
 </td>
 
 </tr>
 
-<tr data-index="13">
+<tr data-index="8" data-listing-title-sort="wild strawberry">
 <td>
-<span class="listing-common">showy goldenrod</span>
+<a href="https://www.canr.msu.edu/nativeplants/plant_facts/wild_strawberry_virginia_strawberry" class="title listing-title">wild strawberry</a>
 </td>
 <td>
-<span class="listing-scientific"><em>Solidago speciosa</em></span>
+<span class="listing-scientific"><em>Fragaria virginiana</em></span>
 </td>
 <td>
 <span class="listing-category">forb</span>
 </td>
+
+</tr>
+
+<tr data-index="9" data-listing-title-sort="spotted bee balm (horsemint)">
 <td>
-<span class="listing-source">Livonia seed library</span>
+<a href="https://www.canr.msu.edu/nativeplants/plant_facts/horsemint_spotted_bee_balm" class="title listing-title">spotted bee balm (horsemint)</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Monarda punctata</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
 </td>
 
 </tr>
 
-<tr data-index="14">
+<tr data-index="10" data-listing-title-sort="hairy beardtongue">
 <td>
-<span class="listing-common">orange coneflower (perennial black-eyed susan)</span>
+<a href="https://www.canr.msu.edu/nativeplants/plant_facts/penstemon_hairy_beardtongue" class="title listing-title">hairy beardtongue</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Penstemon hirsutus</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+
+</tr>
+
+<tr data-index="11" data-listing-title-sort="mountain mint">
+<td>
+<a href="https://michiganflora.net/genus/Pycnanthemum" class="title listing-title">mountain mint</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Pycnanthemum</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+
+</tr>
+
+<tr data-index="12" data-listing-title-sort="orange coneflower">
+<td>
+<a href="https://michiganflora.net/record/435" class="title listing-title">orange coneflower</a>
 </td>
 <td>
 <span class="listing-scientific"><em>Rudbeckia fulgida</em></span>
@@ -494,15 +415,64 @@ window.Quarto = {
 <td>
 <span class="listing-category">forb</span>
 </td>
+
+</tr>
+
+<tr data-index="13" data-listing-title-sort="black-eyed susan">
 <td>
-<span class="listing-source">our brother</span>
+<a href="https://michiganflora.net/record/436" class="title listing-title">black-eyed susan</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Rudbeckia hirta</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
 </td>
 
 </tr>
 
-<tr data-index="15">
+<tr data-index="14" data-listing-title-sort="stiff goldenrod">
 <td>
-<span class="listing-common">smooth blue aster</span>
+<a href="https://michiganflora.net/record/466" class="title listing-title">stiff goldenrod</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Solidago rigida</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+
+</tr>
+
+<tr data-index="15" data-listing-title-sort="showy goldenrod">
+<td>
+<a href="https://www.canr.msu.edu/nativeplants/plant_facts/showy_goldenrod" class="title listing-title">showy goldenrod</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Solidago speciosa</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+
+</tr>
+
+<tr data-index="16" data-listing-title-sort="prairie dropseed">
+<td>
+<a href="https://michiganflora.net/record/2234" class="title listing-title">prairie dropseed</a>
+</td>
+<td>
+<span class="listing-scientific"><em>Sporobolus heterolepis</em></span>
+</td>
+<td>
+<span class="listing-category">grass</span>
+</td>
+
+</tr>
+
+<tr data-index="17" data-listing-title-sort="smooth aster">
+<td>
+<a href="https://michiganflora.net/record/484" class="title listing-title">smooth aster</a>
 </td>
 <td>
 <span class="listing-scientific"><em>Symphyotrichum laeve</em></span>
@@ -510,56 +480,18 @@ window.Quarto = {
 <td>
 <span class="listing-category">forb</span>
 </td>
-<td>
-<span class="listing-source">our brother</span>
-</td>
 
 </tr>
 
-<tr data-index="16">
+<tr data-index="18" data-listing-title-sort="sky blue aster">
 <td>
-<span class="listing-common">pussytoes</span>
+<a href="https://michiganflora.net/record/489" class="title listing-title">sky blue aster</a>
 </td>
 <td>
-<span class="listing-scientific">&nbsp;</span>
-</td>
-<td>
-<span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">our friend Sarah</span>
-</td>
-
-</tr>
-
-<tr data-index="17">
-<td>
-<span class="listing-common">mountain mint</span>
-</td>
-<td>
-<span class="listing-scientific">&nbsp;</span>
+<span class="listing-scientific"><em>Symphyotrichum oolentangiense</em></span>
 </td>
 <td>
 <span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">our friend Sarah</span>
-</td>
-
-</tr>
-
-<tr data-index="18">
-<td>
-<span class="listing-common">stiff goldenrod</span>
-</td>
-<td>
-<span class="listing-scientific">&nbsp;</span>
-</td>
-<td>
-<span class="listing-category">forb</span>
-</td>
-<td>
-<span class="listing-source">our friend Sarah</span>
 </td>
 
 </tr>
@@ -567,7 +499,32 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+<div class="quarto-layout-panel" width="75%" data-layout="[1,1]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/butterfly-weed-first-bloom.jpg" class="img-fluid figure-img"></p>
+<figcaption>Butterfly weed</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/purple-lovegrass.jpg" class="img-fluid figure-img"></p>
+<figcaption>Purple love grass</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

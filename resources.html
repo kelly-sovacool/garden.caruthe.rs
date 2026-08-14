@@ -46,6 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-b897cf8ec707710df881ff98fa530655.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,6 +79,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Resources">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://garden.caruthe.rs/img/milk-jugs-spring.jpg">
+<meta property="og:image:alt" content="Winter-sown milk jugs with mature seedlings">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -141,7 +147,30 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://growitbuildit.com/illustrated-guide-to-winter-sowing-with-pictures/">Guide to winter sowing - Grow It Build It</a></li>
 <li><a href="https://waynecountymichigan.wildones.org/">Wild Ones - Wayne County Michigan Chapter</a></li>
 <li><a href="https://nwf.org/">National Wildlife Federation</a></li>
+<li><a href="https://www.michiganensenatives.com/growing">Michiganse Natives Growing Guide</a></li>
+<li><a href="https://www.canr.msu.edu/nativeplants/plant_facts/">MSU Native Plant selection</a></li>
 </ul>
+<p>&nbsp;</p>
+<div class="quarto-layout-panel" data-layout="[1.57,1]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 61.1%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/milk-jugs-spring.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Winter-sown milk jugs with mature seedlings"><img src="img/milk-jugs-spring.jpg" class="img-fluid figure-img" alt="Winter-sown milk jugs with mature seedlings"></a></p>
+<figcaption>Winter-sown milk jugs with mature seedlings</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 38.9%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/butterfly-weed-monarch-caterpillar.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Monarch caterpillar on butterfly weed"><img src="img/butterfly-weed-monarch-caterpillar.jpg" class="img-fluid figure-img" alt="Monarch caterpillar on butterfly weed"></a></p>
+<figcaption>Monarch caterpillar on butterfly weed</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 
 
 
@@ -560,6 +589,38 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
