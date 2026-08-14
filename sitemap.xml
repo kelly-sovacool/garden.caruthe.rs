@@ -2,10 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://garden.caruthe.rs/index.html</loc>
-    <lastmod>2026-08-13T20:47:46.206Z</lastmod>
+    <lastmod>2026-08-14T04:06:38.495Z</lastmod>
   </url>
   <url>
-    <loc>https://garden.caruthe.rs/garden.html</loc>
-    <lastmod>2026-08-13T20:47:46.206Z</lastmod>
+    <loc>https://garden.caruthe.rs/resources.html</loc>
+    <lastmod>2026-08-14T04:06:38.495Z</lastmod>
+  </url>
+  <url>
+    <loc>https://garden.caruthe.rs/plants.html</loc>
+    <lastmod>2026-08-14T04:06:38.495Z</lastmod>
   </url>
 </urlset>

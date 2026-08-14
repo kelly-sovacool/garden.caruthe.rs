@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>David &amp; Kelly’s Gateway Garden</title>
+<title>Plants</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,6 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -46,9 +48,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-b897cf8ec707710df881ff98fa530655.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,21 +75,72 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>
+<script>
 
-      .quarto-title-block .quarto-title-banner {
-        background-image: url(img/gateway-garden-banner.jpg);
-background-size: cover;
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-common','listing-scientific','listing-category','listing-source',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-common","listing-scientific","listing-category","listing-source"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
       }
-</style>
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
-
-<meta property="og:title" content="David &amp; Kelly’s Gateway Garden">
-<meta property="og:description" content="">
+<meta property="og:title" content="Plants">
+<meta property="og:description" content="What’s growing the garden?">
 <meta property="og:image" content="https://garden.caruthe.rs/img/butterfly-weed-first-bloom.jpg">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -103,11 +153,11 @@ background-size: cover;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./plants.html"> 
+    <a class="nav-link active" href="./plants.html" aria-current="page"> 
 <span class="menu-text">Plants</span></a>
   </li>  
   <li class="nav-item">
@@ -124,114 +174,400 @@ background-size: cover;
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title"><p>David &amp; Kelly’s Gateway Garden</p></h1>
+    <div class="quarto-title column-page">
+      <h1 class="title">Plants</h1>
+            <p class="subtitle lead">What’s growing the garden?</p>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page">
 
       
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">August 14, 2026</p>
+      </div>
+    </div>
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
 
 
-<p>Hi, we’re David and Kelly! If you’re here, you’ve probably walked by our house and noticed the garden in our front yard. Maybe you’ve wondered: what are you growing, why are you growing it, and why are you growing it <em>there</em>? We’d love to tell you all about it! So we made this webpage to do just that. And maybe by the end of it, you might even wonder: <em>how can I start a garden like yours in my own yard?</em></p>
-<p>You can read <a href="#our-gardens-story">our garden’s story below</a>, dive in to learn about <a href="./plants.html">what’s growing in the garden</a>, or check out <a href="./resources.html">links to resources</a> that have helped us in our journey!</p>
-<p><a href="./img/gateway-garden-2026-08-13.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./img/gateway-garden-2026-08-13.jpg" class="img-fluid" style="width:100.0%"></a></p>
-<section id="our-gardens-story" class="level2">
-<h2 class="anchored" data-anchor-id="our-gardens-story">Our garden’s story</h2>
-<p>We moved into the neighborhood in fall of 2024 – our first home! We spent most of 2025 dreaming of planting native plants in our yard, but unsure how to bring this dream to reality. We decided to turn the entire section of lawn between the sidewalk and street into a pollinator-friendly native garden. Kelly especially has dreamt of cultivating her own garden filled with native plants to support birds, bees, butterflies, and other creatures that are vital to our local ecosystem. Our hope is that by having the garden in the front yard, neighbors and passersby will get to enjoy it as well. In the fall of 2025, we fully committed to our plan: we rented a sod cutter and removed the grass in the entire 425 square foot area between the sidewalk and street. The dirt level was higher than the sidewalk, so we also removed and re-leveled a lot of dirt, and dug a shallow trench alongside the sidewalk so that in the future any mulch that may escape the garden can easily be swept back in. We laid down cardboard, newspaper, leaves, and a thick layer of wood chips sourced from a neighbor’s Chip Drop pile.</p>
-<div class="quarto-layout-panel" data-layout="[1.5,1]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="img/trenching.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Trenching to help keep mulch out of the street and off the sidewalk. Nov 01, 2025"><img src="img/trenching.jpg" class="img-fluid figure-img" alt="Trenching to help keep mulch out of the street and off the sidewalk. Nov 01, 2025"></a></p>
-<figcaption>Trenching to help keep mulch out of the street and off the sidewalk. <em>Nov 01, 2025</em></figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="img/cardboard-process.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Releveling dirt and laying cardboard."><img src="img/cardboard-process.jpg" class="img-fluid figure-img" alt="Releveling dirt and laying cardboard."></a></p>
-<figcaption>Releveling dirt and laying cardboard.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<p>Over the winter, I (Kelly) attended <a href="https://waynecountymichigan.wildones.org">Wild Ones Wayne County</a> workshops on seed cleaning and <a href="https://growitbuildit.com/illustrated-guide-to-winter-sowing-with-pictures/">winter sowing</a>, and took seeds home with me. My neighbor and I sowed seeds in milk jugs and placed them outside in January and February to face the Michigan winter weather. I sketched out a rough planting plan following guidelines such as repeated drifts of 3-5 plants, dense planting with approximately 12 inch spacing between plants, keeping taller plants toward the center and short plants closer to the sidewalk. I want the garden to look thoughtfully designed and somewhat tidy so that neighbors will have a positive impression of native gardening practices.</p>
-<div class="quarto-layout-panel" data-layout="[1,1.4]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 41.7%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="img/winter-milk-jugs.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Milk jugs with winter-sown seeds. March 02, 2026"><img src="img/winter-milk-jugs.jpg" class="img-fluid figure-img" alt="Milk jugs with winter-sown seeds. March 02, 2026"></a></p>
-<figcaption>Milk jugs with winter-sown seeds. <em>March 02, 2026</em></figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 58.3%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="img/planting-plan-3.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="One of the last iterations of the planting plan."><img src="img/planting-plan-3.jpg" class="img-fluid figure-img" alt="One of the last iterations of the planting plan."></a></p>
-<figcaption>One of the last iterations of the planting plan.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<p>By mid April 2026, everything in the milk jugs had sprouted. In mid May, many of the seedlings were gaining their true leaves, and I opened up the milk jugs to avoid overheating. Unfortunately, we lost one jug of little bluestem to chipmunks, but everything else did extremely well with the winter sowing method. I started transplanting seedlings directly to the garden in late May. I laid down sticks to mark designated walking paths, and plan to add stepping stones in the future. By mid June, I had finished transplanting most of the seedlings and it started to look like an actual garden! We added small signs to label the plant species for curious passersby, and to help us identify what we planted next spring.</p>
-<div class="quarto-layout-panel" data-layout="[1,1.9]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 34.5%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="img/day-1-butterfly-weed.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="First butterfly weed transplanted to the garden. May 16, 2026"><img src="img/day-1-butterfly-weed.jpg" class="img-fluid figure-img" alt="First butterfly weed transplanted to the garden. May 16, 2026"></a></p>
-<figcaption>First butterfly weed transplanted to the garden. <em>May 16, 2026</em></figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 65.5%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="img/july-12-2026.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="By mid July, we had planted almost everything we wanted to plant! July 12, 2026"><img src="img/july-12-2026.jpg" class="img-fluid figure-img" alt="By mid July, we had planted almost everything we wanted to plant! July 12, 2026"></a></p>
-<figcaption>By mid July, we had planted almost everything we wanted to plant! <em>July 12, 2026</em></figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<p>Our garden is still in its infancy, and there is more work to do such as filling in more grasses between forbs and adding ground cover like wild strawberry. But the potential for beautiful blooms and all the wild critters they will attract fills us with hopeful expectation for the future as we watch our garden mature over the years. We decided to call this section between the sidewalk and street “The Gateway Garden”; it’s our first big step through the doorway of native gardening, and we hope it can become a gateway for others too!</p>
-<p>You can learn more about what’s growing in the Gateway Garden <a href="./plants.html">here</a>.</p>
-<div class="flex-container align-center" style="margin-left: 75px; margin-right: 75px">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="img/butterfly-weed-first-bloom.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="The first bloom of butterfly milkweed in the garden! See if you can spy the monarch caterpillar munching on the buds. August 12, 2026"><img src="img/butterfly-weed-first-bloom.jpg" class="img-fluid figure-img" alt="The first bloom of butterfly milkweed in the garden! See if you can spy the monarch caterpillar munching on the buds. August 12, 2026"></a></p>
-<figcaption>The first bloom of butterfly milkweed in the garden! See if you can spy the monarch caterpillar munching on the buds. <em>August 12, 2026</em></figcaption>
-</figure>
-</div>
-</div>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-common" data-direction="asc">
+        Common name
+      </option>
+      <option value="listing-scientific" data-direction="asc">
+        Scientific name
+      </option>
+      <option value="listing-category" data-direction="asc">
+        Category
+      </option>
+      <option value="listing-source" data-direction="asc">
+        Source
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-common" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Common name</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-scientific" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Scientific name</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-category" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Category</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-source" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Source</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0">
+<td>
+<span class="listing-common">wild strawberry</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Fragaria virginiana</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">our friend Sarah</span>
+</td>
+
+</tr>
+
+<tr data-index="1">
+<td>
+<span class="listing-common">sand (lanceleaf) coreopsis</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Coreopsis lanceolata</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="2">
+<td>
+<span class="listing-common">purple lovegrass</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Eragrostis pectinacea</em></span>
+</td>
+<td>
+<span class="listing-category">grass</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="3">
+<td>
+<span class="listing-common">hairy beardtongue</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Penstemon hirsutus</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="4">
+<td>
+<span class="listing-common">prairie dropseed</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Sporobolus heterolepis</em></span>
+</td>
+<td>
+<span class="listing-category">grass</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="5">
+<td>
+<span class="listing-common">pearly everlasting</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Anaphalis margaritaiea</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="6">
+<td>
+<span class="listing-common">spotted bee balm (horsemint)</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Monarda punctata</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="7">
+<td>
+<span class="listing-common">butterfly weed</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Asclepias tuberosa</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="8">
+<td>
+<span class="listing-common">black-eyed susan</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Rudbeckia hirta</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="9">
+<td>
+<span class="listing-common">sky blue aster</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Symphotrichum oolentangiense</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="10">
+<td>
+<span class="listing-common">side oats grama</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Bouteloua curtipendula</em></span>
+</td>
+<td>
+<span class="listing-category">grass</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="11">
+<td>
+<span class="listing-common">anise hyssop</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Agastache foeniculum</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">Wild Ones Wayne County</span>
+</td>
+
+</tr>
+
+<tr data-index="12">
+<td>
+<span class="listing-common">purple coneflower</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Echinacea purpurea</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">our neighor Bob (thanks Bob!)</span>
+</td>
+
+</tr>
+
+<tr data-index="13">
+<td>
+<span class="listing-common">showy goldenrod</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Solidago speciosa</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">Livonia seed library</span>
+</td>
+
+</tr>
+
+<tr data-index="14">
+<td>
+<span class="listing-common">orange coneflower (perennial black-eyed susan)</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Rudbeckia fulgida</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">our brother</span>
+</td>
+
+</tr>
+
+<tr data-index="15">
+<td>
+<span class="listing-common">smooth blue aster</span>
+</td>
+<td>
+<span class="listing-scientific"><em>Symphyotrichum laeve</em></span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">our brother</span>
+</td>
+
+</tr>
+
+<tr data-index="16">
+<td>
+<span class="listing-common">pussytoes</span>
+</td>
+<td>
+<span class="listing-scientific">&nbsp;</span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">our friend Sarah</span>
+</td>
+
+</tr>
+
+<tr data-index="17">
+<td>
+<span class="listing-common">mountain mint</span>
+</td>
+<td>
+<span class="listing-scientific">&nbsp;</span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">our friend Sarah</span>
+</td>
+
+</tr>
+
+<tr data-index="18">
+<td>
+<span class="listing-common">stiff goldenrod</span>
+</td>
+<td>
+<span class="listing-scientific">&nbsp;</span>
+</td>
+<td>
+<span class="listing-category">forb</span>
+</td>
+<td>
+<span class="listing-source">our friend Sarah</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -646,38 +982,6 @@ background-size: cover;
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
