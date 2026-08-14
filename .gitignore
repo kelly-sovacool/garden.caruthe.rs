@@ -4,3 +4,5 @@ _site/
 # pixi environments
 .pixi/*
 !.pixi/config.toml
+
+**/*.quarto_ipynb

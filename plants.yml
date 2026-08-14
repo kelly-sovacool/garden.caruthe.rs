@@ -1,76 +1,95 @@
-- common: wild strawberry
+- title: wild strawberry
   scientific: _Fragaria virginiana_
   category: forb
   source: our friend Sarah
-- common: sand (lanceleaf) coreopsis
+  path: https://www.canr.msu.edu/nativeplants/plant_facts/wild_strawberry_virginia_strawberry
+- title: sand coreopsis
   scientific: _Coreopsis lanceolata_
   category: forb
   source: Wild Ones Wayne County
-- common: purple lovegrass
+  path: https://www.canr.msu.edu/nativeplants/plant_facts/sand_coreopsis
+- title: purple love grass
   scientific: _Eragrostis pectinacea_
   category: grass
   source: Wild Ones Wayne County
-- common: hairy beardtongue
+  path: https://www.michiganensenatives.com/product/purple-love-grass/246
+- title: hairy beardtongue
   scientific: _Penstemon hirsutus_
   category: forb
   source: Wild Ones Wayne County
-- common: prairie dropseed
+  path: https://www.canr.msu.edu/nativeplants/plant_facts/penstemon_hairy_beardtongue
+- title: prairie dropseed
   scientific: _Sporobolus heterolepis_
   category: grass
   source: Wild Ones Wayne County
-- common: pearly everlasting
-  scientific: _Anaphalis margaritaiea_
+  path: https://michiganflora.net/record/2234
+- title: pearly everlasting
+  scientific: _Anaphalis margaritacea_
   category: forb
   source: Wild Ones Wayne County
-- common: spotted bee balm (horsemint)
+  path: https://xerces.org/blog/plants-for-pollinators-pearly-everlasting
+- title: spotted bee balm (horsemint)
   scientific: _Monarda punctata_
   category: forb
   source: Wild Ones Wayne County
-- common: butterfly weed
+  path: https://www.canr.msu.edu/nativeplants/plant_facts/horsemint_spotted_bee_balm
+- title: butterfly weed
   scientific: _Asclepias tuberosa_
   category: forb
   source: Wild Ones Wayne County
-- common: black-eyed susan
+  path: https://www.canr.msu.edu/nativeplants/plant_facts/butterfly_weed
+- title: black-eyed susan
   scientific: _Rudbeckia hirta_
   category: forb
   source: Wild Ones Wayne County
-- common: sky blue aster
-  scientific: _Symphotrichum oolentangiense_
+  path: https://michiganflora.net/record/436
+- title: sky blue aster
+  scientific: _Symphyotrichum oolentangiense_
   category: forb
   source: Wild Ones Wayne County
-- common: side oats grama
+  path: https://michiganflora.net/record/489
+- title: side-oats grama
   scientific: _Bouteloua curtipendula_
   category: grass
   source: Wild Ones Wayne County
-- common: anise hyssop
+  path: https://michiganflora.net/record/2022
+- title: anise hyssop
   scientific: _Agastache foeniculum_
   category: forb
   source: Wild Ones Wayne County
-- common: purple coneflower
+  path: https://michiganflora.net/record/1532
+- title: purple coneflower
   scientific: _Echinacea purpurea_
   category: forb
   source: our neighor Bob (thanks Bob!)
-- common: showy goldenrod
+  path: https://michiganflora.net/record/310
+- title: showy goldenrod
   scientific: _Solidago speciosa_
   category: forb
   source: Livonia seed library
-- common: orange coneflower (perennial black-eyed susan)
+  path: https://www.canr.msu.edu/nativeplants/plant_facts/showy_goldenrod
+- title: orange coneflower
   scientific: _Rudbeckia fulgida_
   category: forb
-  source: our brother
-- common: smooth blue aster
+  source: our brother Justin
+  path: https://michiganflora.net/record/435
+- title: smooth aster
   scientific: _Symphyotrichum laeve_
   category: forb
-  source: our brother
-- common: pussytoes
-  scientific:
+  source: our brother Justin
+  path: https://michiganflora.net/record/484
+- title: pussytoes
+  scientific: _Antennaria_
   category: forb
   source: our friend Sarah
-- common: mountain mint
-  scientific:
+  path: https://michiganflora.net/genus/Antennaria
+- title: mountain mint
+  scientific: _Pycnanthemum_
   category: forb
   source: our friend Sarah
-- common: stiff goldenrod
-  scientific:
+  path: https://michiganflora.net/genus/Pycnanthemum
+- title: stiff goldenrod
+  scientific: _Solidago rigida_
   category: forb
   source: our friend Sarah
+  path: https://michiganflora.net/record/466

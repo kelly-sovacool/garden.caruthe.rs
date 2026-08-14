@@ -5,14 +5,26 @@ date-modified: last-modified
 page-layout: full
 image: img/butterfly-weed-first-bloom.jpg
 listing:
+    id: plants
     contents: plants.yml
     type: table
-    fields: [common, scientific, category, source]
+    fields: [title, scientific, category]
     sort-ui: true
+    sort: "scientific asc"
     filter-ui: true
+    #categories: unnumbered
     field-display-names:
-      common: Common name
+      title: Common name
       scientific: Scientific name
       category: Category
-      source: Source
 ---
+
+::: {#plants}
+:::
+
+
+:::{layout="[1,1]" width="75%"}
+![Butterfly weed](img/butterfly-weed-first-bloom.jpg)
+
+![Purple love grass](img/purple-lovegrass.jpg)
+:::

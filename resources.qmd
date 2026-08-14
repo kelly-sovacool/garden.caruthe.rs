@@ -1,7 +1,18 @@
 ---
 title: Resources
+lightbox: true
 ---
 
 - [Guide to winter sowing - Grow It Build It](https://growitbuildit.com/illustrated-guide-to-winter-sowing-with-pictures/)
 - [Wild Ones - Wayne County Michigan Chapter](https://waynecountymichigan.wildones.org/)
 - [National Wildlife Federation](https://nwf.org/)
+- [Michiganse Natives Growing Guide](https://www.michiganensenatives.com/growing)
+- [MSU Native Plant selection](https://www.canr.msu.edu/nativeplants/plant_facts/)
+
+&nbsp;
+
+:::{layout=[1.57,1]}
+![Winter-sown milk jugs with mature seedlings](img/milk-jugs-spring.jpg)
+
+![Monarch caterpillar on butterfly weed](img/butterfly-weed-monarch-caterpillar.jpg)
+:::

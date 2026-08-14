@@ -15,13 +15,11 @@ We'd love to tell you all about it! So we made this webpage to do just that.
 And maybe by the end of it, you might even wonder:
 _how can I start a garden like yours in my own yard?_
 
-
 You can read [our garden's story below](#our-gardens-story),
 dive in to learn about [what's growing in the garden](plants.qmd),
 or check out [links to resources](resources.qmd) that have helped us in our journey!
 
-![](./img/gateway-garden-2026-08-13.jpg){width="100%"}
-
+![](./img/gateway-garden-2026-08-13.jpg){width="100%" alt="Our Gateway Garden as of August 2026. Butterfly weed and Sand coreopsis are in the foreground amidst a mulch bed."}
 
 ## Our garden's story
 
@@ -102,6 +100,8 @@ can become a gateway for others too!
 
 You can learn more about what's growing in the Gateway Garden [here](plants.qmd).
 
-:::{.flex-container .align-center style="margin-left: 75px; margin-right: 75px"}
+:::{layout="[1,1]"}
 ![The first bloom of butterfly milkweed in the garden! See if you can spy the monarch caterpillar munching on the buds. _August 12, 2026_](img/butterfly-weed-first-bloom.jpg)
+
+![Purple love grass in bloom!](img/purple-lovegrass.jpg)
 :::
