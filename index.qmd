@@ -1,14 +1,27 @@
 ---
-title: "Our native garden"
+title: |
+    David & Kelly's
+    Gateway Garden
+title-block-banner: img/gateway-garden-banner.jpg
+lightbox: true
+image: img/butterfly-weed-first-bloom.jpg
 ---
 
 Hi, we're David and Kelly!
 If you're here, you've probably walked by our house and noticed the garden in our front yard.
 Maybe you've wondered:
-_what are you growing, why are you growing it, and why are you growing it **there**?_
+what are you growing, why are you growing it, and why are you growing it _there_?
 We'd love to tell you all about it! So we made this webpage to do just that.
 And maybe by the end of it, you might even wonder:
 _how can I start a garden like yours in my own yard?_
+
+
+You can read [our garden's story below](#our-gardens-story),
+dive in to learn about [what's growing in the garden](plants.qmd),
+or check out [links to resources](resources.qmd) that have helped us in our journey!
+
+![](./img/gateway-garden-2026-08-13.jpg){width="100%"}
+
 
 ## Our garden's story
 
@@ -17,7 +30,9 @@ We spent most of 2025 dreaming of planting native plants in our yard, but unsure
 how to bring this dream to reality.
 We decided to turn the entire section of lawn between the sidewalk and street
 into a pollinator-friendly native garden.
-**TODO: why native plants?**
+Kelly especially has dreamt of cultivating her own garden filled with native
+plants to support birds, bees, butterflies, and other creatures that are vital
+to our local ecosystem.
 Our hope is that by having the garden in the front yard, neighbors and passersby
 will get to enjoy it as well.
 In the fall of 2025, we fully committed to our plan: we rented a sod cutter and
@@ -28,6 +43,13 @@ lot of dirt, and dug a shallow trench alongside the sidewalk so that in the
 future any mulch that may escape the garden can easily be swept back in.
 We laid down cardboard, newspaper, leaves, and a thick layer of wood chips
 sourced from a neighbor's Chip Drop pile.
+
+:::{layout="[1.5,1]"}
+
+![Trenching to help keep mulch out of the street and off the sidewalk. _Nov 01, 2025_](img/trenching.jpg)
+
+![Releveling dirt and laying cardboard.](img/cardboard-process.jpg)
+:::
 
 Over the winter, I (Kelly) attended
 [Wild Ones Wayne County](https://waynecountymichigan.wildones.org)
@@ -43,6 +65,13 @@ sidewalk.
 I want the garden to look thoughtfully designed and somewhat tidy so that
 neighbors will have a positive impression of native gardening practices.
 
+
+:::{layout="[1,1.4]"}
+![Milk jugs with winter-sown seeds. _March 02, 2026_](img/winter-milk-jugs.jpg)
+
+![One of the last iterations of the planting plan.](img/planting-plan-3.jpg)
+:::
+
 By mid April 2026, everything in the milk jugs had sprouted. In mid May, many of
 the seedlings were gaining their true leaves, and I opened up the milk jugs to
 avoid overheating.
@@ -56,13 +85,23 @@ to look like an actual garden!
 We added small signs to label the plant species for curious passersby, and to
 help us identify what we planted next spring.
 
+:::{layout="[1,1.9]"}
+![First butterfly weed transplanted to the garden. _May 16, 2026_](img/day-1-butterfly-weed.jpg)
+
+![By mid July, we had planted almost everything we wanted to plant! _July 12, 2026_](img/july-12-2026.jpg)
+:::
+
 Our garden is still in its infancy, and there is more work to do such as filling
 in more grasses between forbs and adding ground cover like wild strawberry.
 But the potential for beautiful blooms and all the wild critters they will
 attract fills us with hopeful expectation for the future as we watch our garden
-mature over the years!
+mature over the years.
 We decided to call this section between the sidewalk and street "The Gateway Garden";
 it's our first big step through the doorway of native gardening, and we hope it
 can become a gateway for others too!
 
 You can learn more about what's growing in the Gateway Garden [here](plants.qmd).
+
+:::{.flex-container .align-center style="margin-left: 75px; margin-right: 75px"}
+![The first bloom of butterfly milkweed in the garden! See if you can spy the monarch caterpillar munching on the buds. _August 12, 2026_](img/butterfly-weed-first-bloom.jpg)
+:::

@@ -1,0 +1,13 @@
+[workspace]
+authors = ["Kelly Sovacool <kelly@sovacool.dev>"]
+channels = ["conda-forge"]
+name = "garden.caruthe.rs"
+platforms = ["osx-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+qrcode = ">=8.2,<9"
+quarto = ">=1.9.38,<2"
+pillow = ">=12.3.0,<13"

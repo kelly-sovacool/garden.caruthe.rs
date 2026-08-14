@@ -1,3 +1,18 @@
 ---
-title: "What's growing in the garden?"
+title: "Plants"
+subtitle: "What's growing the garden?"
+date-modified: last-modified
+page-layout: full
+image: img/butterfly-weed-first-bloom.jpg
+listing:
+    contents: plants.yml
+    type: table
+    fields: [common, scientific, category, source]
+    sort-ui: true
+    filter-ui: true
+    field-display-names:
+      common: Common name
+      scientific: Scientific name
+      category: Category
+      source: Source
 ---

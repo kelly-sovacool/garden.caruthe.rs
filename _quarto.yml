@@ -2,17 +2,25 @@ project:
   type: website
 
 website:
-  title: "garden.caruthe.rs"
+  title: ""
+  site-url: "https://garden.caruthe.rs"
+  repo-url: https://github.com/kelly-sovacool/garden.caruthe.rs
+  open-graph: true
   navbar:
     left:
-    - href: index.qmd
+    - text: About
+      href: index.qmd
     - href: plants.qmd
     - href: resources.qmd
+  page-footer: |
+    © 2026 Kelly & David
+
 
 format:
   html:
     theme:
-      dark: slate
-      light: yeti
-    css: styles.css
+      light:
+        - yeti
+        - styles.scss
     toc: false
+    title-block-banner: true
