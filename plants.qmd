@@ -1,6 +1,6 @@
 ---
 title: "Plants"
-subtitle: "What's growing the garden?"
+subtitle: "What's growing in the garden?"
 date-modified: last-modified
 page-layout: full
 image: img/butterfly-weed-first-bloom.jpg

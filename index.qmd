@@ -1,7 +1,6 @@
 ---
 title: |
-    David & Kelly's
-    Gateway Garden
+    The Gateway Garden
 title-block-banner: img/gateway-garden-banner.jpg
 lightbox: true
 image: img/butterfly-weed-first-bloom.jpg
