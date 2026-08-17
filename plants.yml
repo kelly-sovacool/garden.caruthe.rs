@@ -1,11 +1,11 @@
 - title: wild strawberry
   scientific: _Fragaria virginiana_
-  category: forb
+  category: wildflower
   source: our friend Sarah
   path: https://www.canr.msu.edu/nativeplants/plant_facts/wild_strawberry_virginia_strawberry
 - title: sand coreopsis
   scientific: _Coreopsis lanceolata_
-  category: forb
+  category: wildflower
   source: Wild Ones Wayne County
   path: https://www.canr.msu.edu/nativeplants/plant_facts/sand_coreopsis
 - title: purple love grass
@@ -15,7 +15,7 @@
   path: https://www.michiganensenatives.com/product/purple-love-grass/246
 - title: hairy beardtongue
   scientific: _Penstemon hirsutus_
-  category: forb
+  category: wildflower
   source: Wild Ones Wayne County
   path: https://www.canr.msu.edu/nativeplants/plant_facts/penstemon_hairy_beardtongue
 - title: prairie dropseed
@@ -25,27 +25,27 @@
   path: https://michiganflora.net/record/2234
 - title: pearly everlasting
   scientific: _Anaphalis margaritacea_
-  category: forb
+  category: wildflower
   source: Wild Ones Wayne County
   path: https://xerces.org/blog/plants-for-pollinators-pearly-everlasting
 - title: spotted bee balm (horsemint)
   scientific: _Monarda punctata_
-  category: forb
+  category: wildflower
   source: Wild Ones Wayne County
   path: https://www.canr.msu.edu/nativeplants/plant_facts/horsemint_spotted_bee_balm
 - title: butterfly weed
   scientific: _Asclepias tuberosa_
-  category: forb
+  category: wildflower
   source: Wild Ones Wayne County
   path: https://www.canr.msu.edu/nativeplants/plant_facts/butterfly_weed
 - title: black-eyed susan
   scientific: _Rudbeckia hirta_
-  category: forb
+  category: wildflower
   source: Wild Ones Wayne County
   path: https://michiganflora.net/record/436
 - title: sky blue aster
   scientific: _Symphyotrichum oolentangiense_
-  category: forb
+  category: wildflower
   source: Wild Ones Wayne County
   path: https://michiganflora.net/record/489
 - title: side-oats grama
@@ -55,41 +55,41 @@
   path: https://michiganflora.net/record/2022
 - title: anise hyssop
   scientific: _Agastache foeniculum_
-  category: forb
+  category: wildflower
   source: Wild Ones Wayne County
   path: https://michiganflora.net/record/1532
 - title: purple coneflower
   scientific: _Echinacea purpurea_
-  category: forb
+  category: wildflower
   source: our neighor Bob (thanks Bob!)
   path: https://michiganflora.net/record/310
 - title: showy goldenrod
   scientific: _Solidago speciosa_
-  category: forb
+  category: wildflower
   source: Livonia seed library
   path: https://www.canr.msu.edu/nativeplants/plant_facts/showy_goldenrod
 - title: orange coneflower
   scientific: _Rudbeckia fulgida_
-  category: forb
+  category: wildflower
   source: our brother Justin
   path: https://michiganflora.net/record/435
 - title: smooth aster
   scientific: _Symphyotrichum laeve_
-  category: forb
+  category: wildflower
   source: our brother Justin
   path: https://michiganflora.net/record/484
 - title: pussytoes
   scientific: _Antennaria_
-  category: forb
+  category: wildflower
   source: our friend Sarah
   path: https://michiganflora.net/genus/Antennaria
 - title: mountain mint
   scientific: _Pycnanthemum_
-  category: forb
+  category: wildflower
   source: our friend Sarah
   path: https://michiganflora.net/genus/Pycnanthemum
 - title: stiff goldenrod
   scientific: _Solidago rigida_
-  category: forb
+  category: wildflower
   source: our friend Sarah
   path: https://michiganflora.net/record/466
