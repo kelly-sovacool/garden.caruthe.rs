@@ -93,3 +93,13 @@
   category: wildflower
   source: our friend Sarah
   path: https://michiganflora.net/record/466
+- title: wild columbine
+  scientific: _Aquilegia canadensis_
+  category: wildflower
+  source: Michiganense Natives
+  path: https://www.canr.msu.edu/nativeplants/plant_facts/columbine
+- title: jacob's ladder
+  scientific: _Polemonium reptans_
+  category: wildflower
+  source: Michiganense Natives
+  path: https://www.fs.usda.gov/wildflowers/plant-of-the-week/Polemonium_reptans.shtml
